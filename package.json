@@ -1,7 +1,7 @@
 {
   "name": "cert-generator",
   "version": "0.0.1",
-  "description": "",
+  "description": "Generate a root certificate.",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && webpack",
