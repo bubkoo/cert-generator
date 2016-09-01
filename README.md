@@ -16,9 +16,9 @@ $ npm install --save cert-generator
 import Generator from 'cert-generator';
 
 /*
-  - options.dir   // where should the certificates be save
-  - options.name  // the root certificate name
- */
+   options.dir   // where should the certificates be save
+   options.name  // the root certificate name
+*/
 let generator = new Generator([options]);
 
 generator.generateRootCA()
