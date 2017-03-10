@@ -122,10 +122,12 @@ class Generator {
             path: this.rootKeyPath,
             content: privateKey
           })
-            .then({
-              cert: certificate,
-              key: privateKey
-            }, next)
+            .then(() => {
+              next(null, {
+                cert: certificate,
+                key: privateKey
+              });
+            })
             .catch(next);
         }
       ], (error, result) => {
